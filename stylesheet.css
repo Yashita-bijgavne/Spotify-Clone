@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Ubuntu:wght@300;500&family=Varela+Round&display=swap');
+body{
+    background-color:rgb(36, 36, 36);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family:'Ubuntu', sans-serif ;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color:rgb(255, 240, 240);
+    height: 59px;
+}
+nav ul li{
+    padding: 0px 12px;
+}
+.brand img{
+    width: 37px;
+    padding: 0px 6px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.container{
+    min-height: 70vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    font-size: x-small;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    /* background-image: url(1d.jpg); */
+}
+.container style{
+    filter: blur(8px);
+}
+ .bottom{
+    position:sticky;
+    height: 130px;
+    background-color: black;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+ }
+ .icons{
+    margin: 20px 0;
+    cursor: pointer;
+ }
+ .icons img{
+    cursor: pointer;
+ }
+ #myProgressBar{
+    width: 80vw;
+    color: green;
+ }
+
+.songItem{
+    height: 40px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+} 
+
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+.timestamp{
+    margin: 0 23px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+    /* border-radius: 34px;
+    animation: vertical-shaking 1.5s infinite; */
+}
+/* @keyframes vertical-shaking {
+    0% { transform: translateY(0) }
+    25% { transform: translateY(5px) }
+    50% { transform: translateY(-5px) }
+    75% { transform: translateY(5px) }
+    100% { transform: translateY(0) }
+  } */
